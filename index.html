@@ -1,1 +1,127 @@
-Hello World
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pensiunea Miroșcoiu – Oază de relaxare și baltă cu știucă</title>
+  <style>
+    :root {
+      --main: #2e5266;
+      --accent: #36c9b6;
+      --bg: #f9f9f9;
+      --heading: #20435c;
+      --card: #fff;;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--bg);
+      color: #333;
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(120deg, var(--main), var(--accent));
+      color: #fff;
+      padding: 3rem 1rem 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.7rem;
+      letter-spacing: 2px;
+      margin-bottom: 0.7rem;
+    }
+    header p {
+      font-size: 1.25rem;
+      opacity: 0.95;
+    }
+    section {
+      max-width: 900px;
+      margin: 2.5rem auto;
+      padding: 2rem;
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 6px 16px 0 rgba(46,82,102,0.09);
+    }
+    h2 { color: var(--heading); margin-bottom: 0.7rem;}
+    .accent { color: var(--accent); font-weight: 700;}
+    .balta {
+      margin: 2.2rem 0;
+      background: linear-gradient(90deg, #d3fcf9 75%, #fbfbd0 100%);
+      border-radius: 8px;
+      padding: 1.5rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .balta img {
+      width: 80px;
+      margin-bottom: 1rem;
+      opacity: 0.9;
+    }
+    .galerie {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 1rem 0 0 0;
+      justify-content: center;
+    }
+    .galerie img {
+      width: 170px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px 0 rgba(46,82,102,0.12);
+      background: #eee;
+    }
+    .contact {
+      background: var(--accent);
+      color: #fff;
+      border-radius: 7px;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section { padding: 1.2rem;}
+      .galerie img { width: 100px; height: 70px;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pensiunea <span class="accent">Miroșcoiu</span></h1>
+    <p>Oază de relaxare între natură și aventură, cu o baltă de știucă chiar în spatele pensiunii</p>
+  </header>
+
+  <section>
+    <h2>Descoperă pensiunea noastră!</h2>
+    <p>
+      Situată într-un colț pitoresc al naturii, <b>Pensiunea Miroșcoiu</b> vă întâmpină cu liniște, confort și o atmosferă caldă, departe de agitația orașului. Indiferent că doriți relaxare totală sau aventură în aer liber, la noi găsiți tot ce vă doriți pentru o escapadă memorabilă cu familia sau prietenii.
+    </p>
+    <div class="balta">
+      <img src="https://img.icons8.com/color/96/000000/fishing-rod.png" alt="Balta cu stiuca">
+      <h2>Balta noastră cu știucă</h2>
+      <p>
+        Una dintre atracțiile principale este <b>balta privată cu știucă</b> aflată în spatele pensiunii! Poți pescui într-un cadru natural fermecător sau pur și simplu să admiri frumusețea apei și să te relaxezi în sunetul liniștit al naturii.
+      </p>
+    </div>
+    <h2>Galerie foto</h2>
+    <div class="galerie">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Pensiunea Miroșcoiu">
+      <img src="https://images.unsplash.com/photo-1424746219973-8fe3bd07d8e3?auto=format&fit=crop&w=400&q=80" alt="Cameră pensiune">
+      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Balta cu stiuca">
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Relaxare natură">
+    </div>
+    <div class="contact">
+      <h2>Contact</h2>
+      <p>Pentru rezervări și detalii:</p>
+      <p>
+        <b>Telefon:</b> 07xx xxx xxx<br>
+        <b>Email:</b> contact@miroscoiu.ro
+      </p>
+      <p>Vă așteptăm cu drag la Pensiunea Miroșcoiu!</p>
+    </div>
+  </section>
+</body>
+</html>
